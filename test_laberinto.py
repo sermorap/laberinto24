@@ -23,16 +23,40 @@ class TestJuego(unittest.TestCase):
         self.assertIsInstance(hab.sur, ParedBomba)
         self.assertIsInstance(hab.este, ParedBomba)
         self.assertIsInstance(hab.oeste, ParedBomba)
-    
-    def test_crearHabitacion_returns_habitacion_con_paredes_diferentes(self):
+
+class TestJuegoAdditional(unittest.TestCase):
+
+    def test_crearHabitacion_norte_sur_same(self):
         juego = Juego()
         habitacion = juego.crearHabitacion(1)
-        self.assertNotEqual(habitacion.norte, habitacion.sur)
-        self.assertNotEqual(habitacion.norte, habitacion.este)
-        self.assertNotEqual(habitacion.norte, habitacion.oeste)
-        self.assertNotEqual(habitacion.sur, habitacion.este)
-        self.assertNotEqual(habitacion.sur, habitacion.oeste)
-        self.assertNotEqual(habitacion.este, habitacion.oeste)
+        self.assertIsNot(habitacion.norte, habitacion.sur)
+
+    def test_crearHabitacion_norte_este_same(self):
+        juego = Juego()
+        habitacion = juego.crearHabitacion(1)
+        self.assertIsNot(habitacion.norte, habitacion.este)
+
+    def test_crearHabitacion_norte_oeste_same(self):
+        juego = Juego()
+        habitacion = juego.crearHabitacion(1)
+        self.assertIsNot(habitacion.norte, habitacion.oeste)
+
+    def test_crearHabitacion_sur_este_same(self):
+        juego = Juego()
+        habitacion = juego.crearHabitacion(1)
+        self.assertIsNot(habitacion.sur, habitacion.este)
+
+    def test_crearHabitacion_sur_oeste_same(self):
+        juego = Juego()
+        habitacion = juego.crearHabitacion(1)
+        self.assertIsNot(habitacion.sur, habitacion.oeste)
+
+    def test_crearHabitacion_este_oeste_same(self):
+        juego = Juego()
+        habitacion = juego.crearHabitacion(1)
+        self.assertIsNot(habitacion.este, habitacion.oeste)
+
+
     
 if __name__ == '__main__':
     unittest.main()
