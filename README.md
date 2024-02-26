@@ -3,7 +3,6 @@ Proyecto del laberinto del curso 23-24
 
 Sergio Mora Plata
 
-<<<<<<< HEAD
 Initial prompt:
 ```
 Escribe un programa python con los siguientes objetos: Laberinto, Pared, Puerta y Habitación.
@@ -24,4 +23,4 @@ La clase Decorator ahora es una subclase de Hoja
 ```
 =======
 Diseño Software 23/24
->>>>>>> b56c80de34c0d77fc27ca4cbe5a904546a88ffc4
+
