@@ -1,8 +1,9 @@
-# Maze Game 2024
+# Juego del Laberinto 2024
 Proyecto del laberinto del curso 23-24
 
 Sergio Mora Plata
 
+<<<<<<< HEAD
 Initial prompt:
 ```
 Escribe un programa python con los siguientes objetos: Laberinto, Pared, Puerta y Habitación.
@@ -21,3 +22,6 @@ Aplicar el patrón de diseño Composite a esta solución: ElementoMapa es la cla
 Una nueva clase Hoja es una subclase de ElementoMapa.
 La clase Decorator ahora es una subclase de Hoja
 ```
+=======
+Diseño Software 23/24
+>>>>>>> b56c80de34c0d77fc27ca4cbe5a904546a88ffc4
